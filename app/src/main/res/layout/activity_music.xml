@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.music.clocklive.wallpaper.activities.MusicActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="@dimen/marging_largest">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.music.clocklive.wallpaper.custom.CustomTextView
+                android:id="@+id/tvMusic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/music_activity_label"
+                app:custom_font="avenir_heavy"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_xxlarge" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/margin_small_tiny"
+                android:padding="@dimen/padding_medium"
+                android:scaleType="centerInside"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/ic_menu_info_details"
+                android:id="@+id/ivInfo"
+                android:layout_marginLeft="@dimen/margin_tiny"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+        <include layout="@layout/content_music" />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

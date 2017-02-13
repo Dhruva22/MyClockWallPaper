@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorbackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.music.clocklive.wallpaper.activities.InformationActivity"
+    tools:showIn="@layout/activity_information">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.music.clocklive.wallpaper.custom.CustomTextView
+            android:text="@string/how_to_set_alarm_at_every_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            app:custom_font="avenir_heavy"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tvQuesToSetAlarmEveryHour" />
+
+        <com.music.clocklive.wallpaper.custom.CustomTextView
+            android:text="@string/ans_to_set_alarm_every_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:custom_font="avenir_heavy"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/tvAnsToSetAlarmEveryHour"
+            android:layout_below="@+id/tvQuesToSetAlarmEveryHour"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <com.music.clocklive.wallpaper.custom.CustomTextView
+            android:text="@string/how_to_set_alarm_at_scheduled_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAnsToSetAlarmEveryHour"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:custom_font="avenir_heavy"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="13dp"
+            android:id="@+id/tvQuesToSetAlarmScheduledTime" />
+
+        <com.music.clocklive.wallpaper.custom.CustomTextView
+            android:text="@string/ans_to_set_alarm_scheduled_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:custom_font="avenir_heavy"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/tvQuesToSetAlarmScheduledTime"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tvAnsToSetAlarmScheduledTime" />
+
+        <com.music.clocklive.wallpaper.custom.CustomTextView
+            android:text="@string/how_to_stop_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:custom_font="avenir_heavy"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/tvAnsToSetAlarmScheduledTime"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:id="@+id/tvQuesToStopAlarm" />
+
+        <com.music.clocklive.wallpaper.custom.CustomTextView
+            android:text="@string/ans_to_stop_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:custom_font="avenir_heavy"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/tvQuesToStopAlarm"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tvAnsToStopAlarm" />
+
+        <com.music.clocklive.wallpaper.custom.CustomTextView
+            android:text="@string/what_time_formats_are_supported"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:custom_font="avenir_heavy"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/tvAnsToStopAlarm"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:id="@+id/tvQuesWhatTimeFormatIsSupported" />
+
+        <com.music.clocklive.wallpaper.custom.CustomTextView
+            android:text="@string/both_12_hours_and_24_hours_format_is_supported"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:custom_font="avenir_heavy"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/tvQuesWhatTimeFormatIsSupported"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tvAnsToWhatTimeFormatIsSupported" />
+
+        <com.music.clocklive.wallpaper.custom.CustomTextView
+            android:text="@string/can_we_set_alarm_at_every_hour_and_scheduled_time_simultaneously"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAnsToWhatTimeFormatIsSupported"
+            android:layout_alignParentLeft="true"
+            app:custom_font="avenir_heavy"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:id="@+id/tvQuesCanWeCheckBothCheckboxTogether" />
+
+        <com.music.clocklive.wallpaper.custom.CustomTextView
+            android:text="@string/ans_to_set_two_alarms_together"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:custom_font="avenir_heavy"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/tvQuesCanWeCheckBothCheckboxTogether"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tvAnsCanWeCheckBothCheckboxTogether" />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

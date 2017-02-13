@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+   <!-- <Preference
+        android:key="setting_layout"
+        android:layout="@layout/activity_setting">
+    </Preference>
+    &lt;!&ndash;<Preference
+        android:key="clock_style_layout_pref"
+        android:layout="@layout/item_clockstyle">
+    </Preference>
+    <Preference
+        android:key="digital_style_layout_pref"
+        android:layout="@layout/item_digitalclockstyle">
+    </Preference>
+    <Preference
+        android:key="hand_style_layout_pref"
+        android:layout="@layout/item_handstyle">
+    </Preference>
+    <Preference
+        android:key="backgrund_layout_pref"
+        android:layout="@layout/item_clockbackground">
+    </Preference>
+    <Preference android:key="clock_size_layout_pref"
+        android:layout="@layout/item_clockdialsize">
+    </Preference>
+    &ndash;&gt; <CheckBoxPreference
+        android:key="displayHandSec"
+        android:title="@string/display_hand_sec"
+        android:defaultValue="true" />-->
+</PreferenceScreen>

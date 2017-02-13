@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/content_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_mysettings">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rlAds"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_medium_small"
+            android:layout_marginRight="@dimen/margin_medium_small">
+
+            <RelativeLayout
+                android:id="@+id/rlClockStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_small">
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:id="@+id/tvLableClockStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clock_style"
+                    app:custom_font="avenir_heavy"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xxlarge"/>
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:id="@+id/tvSummaryClockStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small_tiny"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textColor="@color/colorPrimary"
+
+                    android:layout_below="@+id/tvLableClockStyle"
+                    android:text="@string/select_style_for_clock" />
+
+                <ImageView
+                    android:id="@+id/ivSelectedClockStyle"
+                    android:layout_width="@dimen/setting_item_icon_width"
+                    android:background="@color/colorbackground"
+                    android:layout_height="@dimen/setting_item_icon_height"
+                    android:scaleType="centerInside"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@android:color/black">
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rlDigitalClockStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_small">
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:id="@+id/tvLableDigitalClockStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Digit Style"
+
+                    app:custom_font="avenir_heavy"
+
+                    android:textColor="@color/colorPrimary"
+
+                    android:textSize="@dimen/text_size_xxlarge"/>
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:id="@+id/tvSummaryDigitalClockStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small_tiny"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textColor="@color/colorPrimary"
+
+                    android:layout_below="@+id/tvLableDigitalClockStyle"
+                    android:text="@string/select_digital_style_for_clock"/>
+
+                <ImageView
+                    android:id="@+id/ivSelectedDigitalClockStyle"
+                    android:layout_width="@dimen/setting_item_icon_width"
+                    android:background="@color/colorbackground"
+                    android:layout_height="@dimen/setting_item_icon_height"
+                    android:scaleType="centerInside"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@android:color/black">
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rlHandStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_small">
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:id="@+id/tvLableHandStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hand_style"
+                    app:custom_font="avenir_heavy"
+
+                    android:textColor="@color/colorPrimary"
+
+                    android:textSize="@dimen/text_size_xxlarge"/>
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:id="@+id/tvSummaryHandStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small_tiny"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textColor="@color/colorPrimary"
+
+                    android:layout_below="@+id/tvLableHandStyle"
+                    android:text="@string/select_hand_style_for_clock"/>
+
+                <ImageView
+                    android:id="@+id/ivSelectedHandStyle"
+                    android:layout_width="@dimen/setting_item_icon_width"
+                    android:background="@color/colorbackground"
+                    android:layout_height="@dimen/setting_item_icon_height"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@android:color/black"
+                android:layout_height="1dp">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlMyBackground"
+                android:layout_marginTop="@dimen/margin_medium_small"
+                android:layout_height="wrap_content">
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:text="My Background"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    android:textColor="@color/colorPrimary"
+                    app:custom_font="avenir_heavy"
+                    android:id="@+id/tvLableMyBackground"
+                    android:layout_height="wrap_content" />
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvSummaryMyBackground"
+                    android:layout_marginTop="@dimen/margin_small_tiny"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textColor="@color/colorPrimary"
+
+                    android:layout_below="@+id/tvLableMyBackground"
+                    android:text="@string/change_my_background"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="@dimen/setting_item_icon_width"
+                    android:scaleType="centerInside"
+                    android:id="@+id/ivSelectedMyBackground"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="@dimen/setting_item_icon_height" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@android:color/black"
+                android:layout_height="1dp">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlBackground"
+                android:layout_marginTop="@dimen/margin_medium_small"
+                android:layout_height="wrap_content">
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:text="@string/background"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    app:custom_font="avenir_heavy"
+                    android:textColor="@color/colorPrimary"
+
+                    android:id="@+id/tvLableBackground"
+                    android:layout_height="wrap_content" />
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvSummaryBackground"
+                    android:layout_marginTop="@dimen/margin_small_tiny"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textColor="@color/colorPrimary"
+
+                    android:layout_below="@+id/tvLableBackground"
+                    android:text="@string/select_background_for_clock"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="@dimen/setting_item_icon_width"
+                    android:scaleType="centerInside"
+                    android:id="@+id/ivSelectedBackground"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="@dimen/setting_item_icon_height" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@android:color/black"
+                android:layout_height="1dp">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlShowSecond"
+                android:layout_marginTop="@dimen/margin_medium_small"
+                android:layout_height="wrap_content">
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:text="@string/show_second"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    app:custom_font="avenir_heavy"
+
+                    android:textColor="@color/colorPrimary"
+
+                    android:id="@+id/tvLableShowSecond"
+                    android:layout_height="wrap_content" />
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvSummaryShowSecond"
+                    android:layout_marginTop="@dimen/margin_small_tiny"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textColor="@color/colorPrimary"
+
+                    android:layout_below="@+id/tvLableShowSecond"
+                    android:text="@string/show_hide_second_hand"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/chBox"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@android:color/black"
+                android:layout_height="1dp">
+            </View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlMusic"
+                android:layout_marginTop="@dimen/margin_medium_small"
+                android:layout_height="wrap_content">
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:text="@string/music"
+                    android:textColor="@color/colorPrimary"
+                    app:custom_font="avenir_heavy"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    android:id="@+id/tvLableMusic"
+                    android:layout_height="wrap_content" />
+
+                <com.music.clocklive.wallpaper.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvSummaryMusic"
+                    android:layout_marginTop="@dimen/margin_small_tiny"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/tvLableMusic"
+                    android:text="@string/summary_music"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@android:color/black"
+                android:layout_height="1dp">
+            </View>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rlAds"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/ad_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+    </RelativeLayout>
+
+</RelativeLayout>

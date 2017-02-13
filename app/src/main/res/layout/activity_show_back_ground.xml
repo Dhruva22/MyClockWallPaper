@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.music.clocklive.wallpaper.activities.ShowBackGroundActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="@dimen/marging_largest">
+
+        <com.music.clocklive.wallpaper.custom.CustomTextView
+            android:id="@+id/tvBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/show_background_activity_label"
+            app:custom_font="avenir_heavy"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_xxlarge" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+        <include layout="@layout/content_show_back_ground" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
